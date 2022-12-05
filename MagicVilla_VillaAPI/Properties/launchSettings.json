@@ -19,7 +19,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "https": {
+    "MagicVilla_API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
