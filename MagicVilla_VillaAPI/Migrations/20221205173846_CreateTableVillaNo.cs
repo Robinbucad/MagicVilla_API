@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MagicVillaVillaAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class AddVillaNumberToDb : Migration
+    public partial class CreateTableVillaNo : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -30,35 +30,35 @@ namespace MagicVillaVillaAPI.Migrations
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4098));
+                value: new DateTime(2022, 12, 5, 18, 38, 45, 921, DateTimeKind.Local).AddTicks(1418));
 
             migrationBuilder.UpdateData(
                 table: "Villas",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4209));
+                value: new DateTime(2022, 12, 5, 18, 38, 45, 921, DateTimeKind.Local).AddTicks(1465));
 
             migrationBuilder.UpdateData(
                 table: "Villas",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4213));
+                value: new DateTime(2022, 12, 5, 18, 38, 45, 921, DateTimeKind.Local).AddTicks(1467));
 
             migrationBuilder.UpdateData(
                 table: "Villas",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4223));
+                value: new DateTime(2022, 12, 5, 18, 38, 45, 921, DateTimeKind.Local).AddTicks(1470));
 
             migrationBuilder.UpdateData(
                 table: "Villas",
                 keyColumn: "Id",
                 keyValue: 5,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4230));
+                value: new DateTime(2022, 12, 5, 18, 38, 45, 921, DateTimeKind.Local).AddTicks(1473));
         }
 
         /// <inheritdoc />
@@ -72,35 +72,35 @@ namespace MagicVillaVillaAPI.Migrations
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 12, 31, 33, 806, DateTimeKind.Local).AddTicks(8798));
+                value: new DateTime(2022, 12, 5, 18, 37, 47, 888, DateTimeKind.Local).AddTicks(2662));
 
             migrationBuilder.UpdateData(
                 table: "Villas",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 12, 31, 33, 806, DateTimeKind.Local).AddTicks(8842));
+                value: new DateTime(2022, 12, 5, 18, 37, 47, 888, DateTimeKind.Local).AddTicks(2724));
 
             migrationBuilder.UpdateData(
                 table: "Villas",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 12, 31, 33, 806, DateTimeKind.Local).AddTicks(8844));
+                value: new DateTime(2022, 12, 5, 18, 37, 47, 888, DateTimeKind.Local).AddTicks(2727));
 
             migrationBuilder.UpdateData(
                 table: "Villas",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 12, 31, 33, 806, DateTimeKind.Local).AddTicks(8847));
+                value: new DateTime(2022, 12, 5, 18, 37, 47, 888, DateTimeKind.Local).AddTicks(2730));
 
             migrationBuilder.UpdateData(
                 table: "Villas",
                 keyColumn: "Id",
                 keyValue: 5,
                 column: "CreateDate",
-                value: new DateTime(2022, 12, 5, 12, 31, 33, 806, DateTimeKind.Local).AddTicks(8850));
+                value: new DateTime(2022, 12, 5, 18, 37, 47, 888, DateTimeKind.Local).AddTicks(2732));
         }
     }
 }

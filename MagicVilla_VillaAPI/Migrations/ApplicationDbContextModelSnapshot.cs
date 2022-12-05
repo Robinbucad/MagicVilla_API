@@ -70,7 +70,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 1,
                             Amenity = "",
-                            CreateDate = new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4098),
+                            CreateDate = new DateTime(2022, 12, 5, 18, 56, 30, 410, DateTimeKind.Local).AddTicks(7611),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa3.jpg",
                             Name = "Royal Villa",
@@ -83,7 +83,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 2,
                             Amenity = "",
-                            CreateDate = new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4209),
+                            CreateDate = new DateTime(2022, 12, 5, 18, 56, 30, 410, DateTimeKind.Local).AddTicks(7649),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa1.jpg",
                             Name = "Premium Pool Villa",
@@ -96,7 +96,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 3,
                             Amenity = "",
-                            CreateDate = new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4213),
+                            CreateDate = new DateTime(2022, 12, 5, 18, 56, 30, 410, DateTimeKind.Local).AddTicks(7652),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa4.jpg",
                             Name = "Luxury Pool Villa",
@@ -109,7 +109,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 4,
                             Amenity = "",
-                            CreateDate = new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4223),
+                            CreateDate = new DateTime(2022, 12, 5, 18, 56, 30, 410, DateTimeKind.Local).AddTicks(7654),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa5.jpg",
                             Name = "Diamond Villa",
@@ -122,7 +122,7 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 5,
                             Amenity = "",
-                            CreateDate = new DateTime(2022, 12, 5, 16, 12, 46, 505, DateTimeKind.Local).AddTicks(4230),
+                            CreateDate = new DateTime(2022, 12, 5, 18, 56, 30, 410, DateTimeKind.Local).AddTicks(7657),
                             Details = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa2.jpg",
                             Name = "Diamond Pool Villa",
@@ -141,7 +141,7 @@ namespace MagicVillaVillaAPI.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("SpecialDatails")
+                    b.Property<string>("SpecialDetails")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

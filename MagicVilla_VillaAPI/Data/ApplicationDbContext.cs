@@ -15,6 +15,7 @@ namespace MagicVilla_VillaAPI.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<Villa>().HasData(
                 new Villa
                 {
