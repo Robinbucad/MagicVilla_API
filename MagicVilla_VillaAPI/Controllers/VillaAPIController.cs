@@ -153,7 +153,6 @@ namespace MagicVilla_VillaAPI.Controllers
 
                 await _dbVilla.RemoveAsync(villa);
                 _response.StatusCode = System.Net.HttpStatusCode.NoContent;
-                _response.IsSuccess = true;
                 return Ok(_response);
             }
             catch (Exception ex)
@@ -172,7 +171,7 @@ namespace MagicVilla_VillaAPI.Controllers
         {
             try
             {
-                if (updateDTO == null || id != updateDTO.Id)
+                if (updateDTO == null | id != updateDTO.Id)
                 {
                     _response.StatusCode = System.Net.HttpStatusCode.BadRequest;
                     return BadRequest(_response);
