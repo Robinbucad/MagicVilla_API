@@ -4,11 +4,11 @@ using MagicVilla_VillaAPI.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace MagicVilla_VillaAPI.Controllers.v1
+namespace MagicVilla_VillaAPI.Controllers
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/usersAuth")]
-    [ApiVersion("1.0")]
+    [ApiVersionNeutral]
     public class UsersController : Controller
     {
         private readonly IUserRepository _userRepository;
@@ -39,10 +39,10 @@ namespace MagicVilla_VillaAPI.Controllers.v1
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Login([FromBody] RegistrationRequestDTO model)
+        public async Task<IActionResult> Register([FromBody] RegistrationRequestDTO model)
         {
-            bool ifUniqueUser = _userRepository.IsUniqueUser(model.Username);
-            if (!ifUniqueUser)
+            bool ifUserNameUnique = _userRepository.IsUniqueUser(model.UserName);
+            if (!ifUserNameUnique)
             {
                 _response.StatusCode = HttpStatusCode.BadRequest;
                 _response.IsSuccess = false;
@@ -55,10 +55,9 @@ namespace MagicVilla_VillaAPI.Controllers.v1
             {
                 _response.StatusCode = HttpStatusCode.BadRequest;
                 _response.IsSuccess = false;
-                _response.ErrorMessages.Add("Error while registeringUsername already exists");
+                _response.ErrorMessages.Add("Error while registering");
                 return BadRequest(_response);
             }
-
             _response.StatusCode = HttpStatusCode.OK;
             _response.IsSuccess = true;
             return Ok(_response);
